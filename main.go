@@ -64,7 +64,7 @@ func main() {
 	}
 	client := clientset.NewForConfigOrDie(config)
 
-	run := func(ctx context.Context) {
+	run := func(_ context.Context) {
 		// 在这里完成你的控制器循环
 		klog.Info("Controller loop...")
 
